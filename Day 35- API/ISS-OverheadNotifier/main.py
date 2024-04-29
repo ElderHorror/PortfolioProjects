@@ -4,8 +4,8 @@ import requests
 from datetime import datetime
 import smtplib
 
-my_email = "Elderhorror@outlook.com"
-password = "Prekunmi1@"
+my_email = "YOUR EMAIL"
+password = "YOUR PASSWORD"
 
 MY_LAT = 9.081999
 MY_LONG = 8.675277
@@ -47,7 +47,7 @@ while True:
             connection.login(user=my_email, password=password)
             connection.sendmail(
                         from_addr=my_email,
-                        to_addrs="adebayoadedeji413@gmail.com",
+                        to_addrs="RECEIVER EMAIL",
                         msg=f"Subject: Look Up\n\n Look up nigga"
             )
 
