@@ -1,0 +1,14 @@
+Layout Managers
+Pack: Packs each widgets next to each other in a logical format. Usually, starts from the top. Can be changed by adding a side parameter, E.g, Side="left/bottom/right"
+
+Place: Its all about, Precise Positioning. WHen using place, You can provide a Y and X Value.
+I.e, my_label.place(x=0, y=0)
+However, Its downside is that its so specific. and becomes tedious when moving multiple widgets
+
+Grid: It imagins that the entire program is a grid that can be divided into any row and columns
+Row are horizontal
+Columns are Vertical
+I.e, my_label.grid(column=0, row=0)
+Easier is to define from top left(0,0) then continue from there
+
+Padding:
