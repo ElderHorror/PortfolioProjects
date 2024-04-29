@@ -4,8 +4,8 @@ import random
 
 now = dt.datetime.now()
 day = now.weekday()
-my_email = "Elderhorror@outlook.com"
-password = "Prekunmi1@"
+my_email = "YOUR EMAIL"
+password = "#YOUR PASSWORD"
 
 if day == 2:
     with open(file="quotes.txt") as text:
@@ -16,7 +16,7 @@ if day == 2:
         connection.login(user=my_email, password=password)
         connection.sendmail(
                     from_addr=my_email,
-                    to_addrs="adebayoadedeji413@gmail.com",
+                    to_addrs="RECEIVER EMAIL",
                     msg=f"Subject: Have a quote today\n\n {quote}"
             )
 
