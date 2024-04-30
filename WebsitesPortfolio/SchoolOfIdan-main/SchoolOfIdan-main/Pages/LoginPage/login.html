@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to custom font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking to external CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss-colors-css-variables" />
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    
+    <script>
+      // Configuration for Tailwind CSS
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blue: "#1fb6ff",
+              pink: "#ff49db",
+              orange: "#ff7849",
+              green: "#13ce66",
+              "gray-dark": "#273444",
+              gray: "#8492a6",
+              "gray-light": "#d3dce6",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Defining Tailwind CSS utility class -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <title>Login</title>
+  </head>
+  <body class="font-['Poppins']">
+    <div class="flex flex-row w-screen h-screen">
+      <section class="w-1/2 bg-[#FFEE00]">
+        <div class="space-y-6">
+          <div class="flex flex-col justify-center items-center space-y-8">
+            <!-- Logo -->
+            <a href="/index.html" class="self-start lg:max-xl: self-start lg:max-xl:-ml-20">
+              <img src="/Images/nav-logo.png" alt="" class="ml-20 py-4 pl-6 max-w-[10em] w-[10em]" />
+            </a>
+
+            <!-- Main Image -->
+            <img src="/Images/Group 20.png" class="z-10 w-[500px] h-[520px]" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="w-1/2 flex flex-col items-center justify-center">
+        <div class="max-w-full self-end mr-8 mb-4">
+          <!-- Sign up button -->
+          <a href="/Pages/SignUp-Page/signup.html">
+            <button class="bg-[#FFEE00] text-sm font-medium rounded-xl px-6 py-2 hover:font-semibold">
+              Sign up
+            </button>
+          </a>
+        </div>
+        <div class="text-center font-semibold text-2xl/8 mb-6">
+          <p>Welcome back</p>
+          <p>!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+        </div>
+        <form class="flex flex-col items-center space-y-10 bg-[#FFEE00] w-[32em] lg:max-xl:w-[30em] rounded-[60px] py-6 drop-shadow-[18px_-6px_0px_rgba(0,0,0,0.8)]">
+          <div class="text-center">
+            <!-- Login title and description -->
+            <p class="text-4xl pb-6 font-semibold drop-shadow-[3px_0px_0px_rgba(255,255,255.4)]">
+              Login
+            </p>
+            <p class="text-sm max-w-[28em] font-medium">
+              Welcome back, dear friend! We've been pining for your return, and oh boy, have we missed you!
+            </p>
+          </div>
+          <div class="flex flex-col w-[26em]">
+            <!-- Email input field -->
+            <input type="text" placeholder="Email" class="h-14 rounded-xl bg-[#FFF896] mb-6" />
+            
+            <!-- Password input field -->
+            <input type="text" placeholder="Password" class="h-14 rounded-xl bg-[#FFF896] mb-2" />
+            
+            <!-- Forgot password link -->
+            <a href="#" class="text-right underline font-medium hover:font-semibold text-sm">forgot password</a>
+          </div>
+          <div class="flex flex-col items-center space-y-2">
+            <!-- Login button -->
+            <a href="/Pages/Homepage/homepage.html" class="w-[26em] text-center pt-2.5 self-center border rounded-xl bg-white h-12 font-semibold hover:font-bold hover:border-[1px]">Login</a>
+            
+            <!-- Sign up link -->
+            <p class="text-xs font-medium">
+              Don't have an account?
+              <span class="underline font-semibold hover:font-bold">
+                <a href="/Pages/SignUp-Page/signup.html">Sign Up</a>
+              </span>
+            </p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

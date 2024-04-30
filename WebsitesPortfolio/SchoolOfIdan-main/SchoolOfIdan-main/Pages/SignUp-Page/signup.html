@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking to external CSS and JavaScript files -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss-colors-css-variables"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      // Configuration for Tailwind CSS
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blue: "#1fb6ff",
+              pink: "#ff49db",
+              orange: "#ff7849",
+              green: "#13ce66",
+              "gray-dark": "#273444",
+              gray: "#8492a6",
+              "gray-light": "#d3dce6",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Defining Tailwind CSS utility class -->
+    <style type="text/tailwindcss">
+      /* Creating custom utility class using Tailwind CSS */
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <title>Sign Up</title>
+  </head>
+  <body class="font-['Poppins']">
+    <nav class="flex flex-row justify-around gap-[60em] lg:max-xl:gap-[46em] my-3">
+      <!-- Navigation menu -->
+      <a href="/index.html">
+        <img src="/Images/nav-logo.png" alt="" class="max-w-[10em] w-[10em]" />
+      </a>
+      <a href="/Pages/LoginPage/login.html"
+        ><button
+          class="bg-[#FFEE00] text-sm font-medium rounded-xl px-6 py-2 hover:font-semibold"
+        >
+          Login
+        </button></a
+      >
+    </nav>
+
+    <section class="flex flex-row justify-around -space-x-[10em] lg:max-xl:-space-x-[6em] ">
+      <form
+        class="h-[540px] drop-shadow-[-190px_6px_0px_rgba(,0,0,0.8)] flex flex-col items-center space-y-6 bg-[#FFEE00] w-[32em] rounded-[60px] py-6"
+      >
+        <div class="text-center mt-4">
+          <!-- Sign up title and description -->
+          <p
+            class="text-3xl pb-4 font-semibold drop-shadow-[3px_0px_0px_rgba(255,255,255.4)]"
+          >
+            Sign Up
+          </p>
+          <p class="text-sm max-w-[28em] mb-4 font-medium">
+            Unlock the ultimate learning experience by signing up now and getting the absolute best from us!
+          </p>
+        </div>
+        <div class="flex flex-col w-[26em]">
+          <!-- Full name input -->
+          <input
+            type="text"
+            placeholder="Full Name"
+            class="h-14 rounded-xl bg-[#FFF896] mb-6"
+          />
+
+          <!-- Email input -->
+          <input
+            type="text"
+            placeholder="Email"
+            class="h-14 rounded-xl bg-[#FFF896] mb-6"
+          />
+
+          <!-- Password input -->
+          <input
+            type="text"
+            placeholder="Password"
+            class="h-14 rounded-xl bg-[#FFF896] mb-2"
+          />
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <!-- Sign Up button -->
+          <a
+            href="/Pages/Homepage/homepage.html"
+            class="w-[26em] border rounded-xl bg-white h-12 font-semibold hover:font-bold text-center pt-2.5"
+          >
+            Sign Up
+          </a>
+          <p class="text-xs font-medium">
+            Already have an account?
+            <span class="underline font-semibold hover:font-bold">
+              <a href="/Pages/LoginPage/login.html">Login</a>
+            </span>
+          </p>
+        </div>
+      </form>
+
+      <section class="flex flex-col items-center mt-[20px]">
+        <p class="font-semibold text-[22px] text-center mb-10">
+          Get ready to learn, and let the <br> fun begin! Sign up now!
+        </p>
+        <div
+          class="mb-4 bg-[#FFEE00] py-6 px-12 rounded-full drop-shadow-[18px_6px_0px_rgba(0,0,0,0.8)]"
+        >
+          <img
+            src="/Images/SCHOOL OF IDDAN.png"
+            class="drop-shadow-[0px_2px_0px_rgba(,0,0,0.8)]"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col">
+          <img
+            class="z-0 drop-shadow-[18px_6px_0px_rgba(,0,0,0.8)]"
+            src="/Images/Rectangle 35.png"
+            alt=""
+          />
+          <img
+            class="z-10 mt-[-20px] ml-[40px] self-center"
+            src="/Images/reverse-point2(1).png"
+            alt=""
+          />
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

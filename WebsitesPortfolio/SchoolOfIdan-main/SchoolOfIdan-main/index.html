@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Linking to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking to external CSS and JavaScript files -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss-colors-css-variables"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- Configuring custom colors for Tailwind CSS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              blue: "#1fb6ff",
+              pink: "#ff49db",
+              orange: "#ff7849",
+              green: "#13ce66",
+              "gray-dark": "#273444",
+              gray: "#8492a6",
+              "gray-light": "#d3dce6",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Defining Tailwind CSS utility class -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[url('/Images/background.png'),_url('./Images/point2.png')] bg-no-repeat bg-[position:top_4em_right_4em,_bottom_-6em_right_14em] lg:max-xl:bg-[position:top_4em_right_0em,_bottom_-6em_right_10em] font-['Poppins']"
+  >
+    <!-- Main container -->
+    <div
+      class="flex flex-col items-center bg-[url('./Images/point1.png')] bg-no-repeat bg-[left_1em_bottom_3em] lg:max-xl:bg-[left_-1em_bottom_4em]"
+    >
+      <div class="flex flex-col items-start space-y-20">
+        <!-- Navigation -->
+        <nav
+          class="flex flex-row justify-center gap-[48em] lg:max-xl:gap-[38em] pt-[2.4em] max-w-[full]"
+        >
+          <img src="Images/nav-logo.png" alt="" class="max-w-[10em] w-[10em]" />
+
+          <!-- Login and Sign Up buttons -->
+          <div
+            class="flex flex-row justify-between space-x-[1em] text-sm font-medium"
+          >
+            <a href="./Pages/LoginPage/login.html">
+              <button
+                class="max-w-md border py-2 px-[40px] rounded-[16px] hover:font-semibold]"
+              >
+                Login
+              </button>
+            </a>
+            <a href="./Pages/SignUp-Page/signup.html">
+              <button
+                class="max-w-md py-[10px] px-[30px] rounded-[16px] bg-[#FFEE00] hover:font-semibold"
+              >
+                Sign Up
+              </button>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Main content section -->
+        <div class="flex flex-col content-center">
+          <!-- Headline and Call-to-action button -->
+          <section class="max-w-3xl flex flex-col space-y-[4em]">
+            <p
+              class="text-[4em] font-bold text-[#252525] w-[8em] tracking-tight"
+            >
+              Learn anytime, anywhere with
+              <span
+                class="text-[#FFEE00] tracking-wide drop-shadow-[-8px_1px_0px_rgba(0,0,0,0.8)]"
+                >IDAN</span
+              >
+              school.
+            </p>
+            <a href="./Pages/LoginPage/login.html" class="">
+              <button
+                class="bg-[#FFEE00] text-sm font-medium w-[200px] rounded-[20px] py-[10px] hover:font-semibold"
+              >
+                Get Started
+              </button>
+            </a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
